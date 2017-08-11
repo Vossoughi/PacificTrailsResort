@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Reigtration</title>
+  <meta name="description" content="Luxury resort to enjoy nature with yurts. Hiking, kayaking and bird watching" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="pacific.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+  
+<body>
+  <div id="wrapper">
+    <h1>Pacific Trails Resort</h1>
+    <div id="nav">
+      <ul id="nav-items">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yurts.html">Yurts</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <h2>Reservation Form</h2>
+      <form method="post" action="contact.php" title="Guest Information">
+        <fieldset>
+          <legend>Guest Information</legend>
+          <p><label for="firstname">First Name:</label><input type="text" name="firstname" id="firstname" size="35" maxlength="35" placeholder="Type first name" required></p>
+          <p><label for="lastname">Last Name:</label> <input type="text" name="lastname" id="lastname" size="35" maxlength="35" placeholder="Type last name" required></p>
+          <p><label for="email">Email: </label><input type="email" name="email" id="email"></p>
+          <p><label for="tel">Telephone: </label><input type="tel" id="tel" name="tel"></p>
+          <p>Number of Guests: <select name="guestnumber" size="1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>more</option>
+            </select>
+          </p>
+          <p>Message:</p>
+          <p><textarea name="Message" rows=5 cols=35 placeholder="Any additional information"></textarea></p>
+        </fieldset>
+        <p class="buttons"><input type="submit" value="Submit"><input type="reset" value="Reset"></p>
+      </form>
+      <div id="footer">
+        <p>Copyright &copy; 2011 Pacific Trails Resort<br>
+        webmaster name</p>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>
